@@ -1,0 +1,20 @@
+# dependencies
+node_modules
+.idea
+.DS_Store
+
+# Config
+package-lock.json
+ecosystem.config.js
+
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+dist-spa
+dist-ssr
+
+# Nuxt generate
+dist
+logs
