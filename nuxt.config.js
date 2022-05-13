@@ -1,3 +1,4 @@
+import webpack from 'webpack'
 import I18N from './locales'
 
 export default {
@@ -13,7 +14,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/A+S.svg' },
       {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap',
@@ -32,6 +33,11 @@ export default {
         autoprefixer: {},
       },
     },
+    plugins: [
+      new webpack.ProvidePlugin({
+        $: "jquery",
+      }),
+    ],
   },
   modules: ['@nuxtjs/i18n'],
 

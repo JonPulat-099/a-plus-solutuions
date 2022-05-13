@@ -14,6 +14,10 @@ export default {
 }
 </script>
 <style scoped>
+div {
+  flex-basis: 22%;
+  min-width: 250px;
+}
 img {
   max-height: 80px;
   object-fit: contain;

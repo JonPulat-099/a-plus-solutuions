@@ -10,6 +10,7 @@
   </li>
 </template>
 <script>
+import $ from 'jquery'
 export default {
   props: {
     name: {
@@ -24,8 +25,10 @@ export default {
 
   methods: {
     changeBlock(url) {
-      const path = this.$route.path;
-      this.$router.push(path + url)
+      const $targetEle = $(url)
+      $('html, body').stop().animate({
+          'scrollTop': $targetEle.offset().top
+      }, 100, 'swing');
     }
   }
 }

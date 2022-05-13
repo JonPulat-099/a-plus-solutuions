@@ -4,7 +4,7 @@
       <div class="w-full flex flex-col lg:flex-row items-center space-x-4 xl:space-x-8">
         <div class="relative w-full flex flex-row items-center justify-between py-6">
           <div>
-            <img :src="require('~/assets/img/logo/logo.svg')" class="w-24 xl:w-28 cursor-pointer" alt="Nefa Logo" @click="$router.push('/')" />
+            <img :src="require('~/assets/img/logo/logo.svg')" class="w-32 xl:w-44 cursor-pointer" alt="A+ Solutions Logo" @click="$router.push('/')" />
           </div>
           <button class="rounded-lg lg:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
             <SegmentIcon v-if="!open" :size="24" />

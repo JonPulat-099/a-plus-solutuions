@@ -4,5 +4,106 @@
     "services": "Services",
     "partners": "Partners",
     "contacts": "Contacts"
-  }
+  },
+
+  "header": {
+    "first": "A+ Solutions is an IT company",
+    "second": "Founded in Uzbekistan",
+    "third": "By representatives of an international company",
+    "text": "With more than 20 years of international experience in various areas of information technology, our team offers services in the development of a modern IT architecture of an organization, the implementation of business intelligence and data management projects, process optimization, the implementation of AML solutions (anti-money laundering), robotization business processes, creating mobile and custom application development. Leverage our unique experience and expertise to drive digital business transformation.",
+    "command": {
+      "simple": "Our team -",
+      "strong": "more than 30 professionals"
+    },
+    "national": {
+      "simple": "Successfully implemented",
+      "strong": "projects in Uzbekistan"
+    },
+    "international": {
+      "simple": "More than 50 international projects",
+      "strong": "completed by our employees"
+    }
+  },
+
+  "exprience_project": "PROJECT EXPERIENCE OF FOUNDERS AND MANAGERS OF A+ SOLUTIONS",
+
+  "why_us": "WHY US?",
+  "best_practice": {
+    "title": "Best practice",
+    "text": "In terms of business processes"
+  },
+
+  "kompetension": {
+    "title": "Competencies",
+    "text": "Qualified IT Resources"
+  },
+
+  "efficiency": {
+    "title": "Efficiency",
+    "text": "Optimal price-quality ratio"
+  },
+
+  "default_sitation": {
+    "title": "Current situation",
+    "limitations": {
+      "first": "Lack of qualified IT specialists",
+      "second": "Lack of competencies in the business to prepare business requirements for IT",
+      "third": "Limited knowledge of best-practice in both business and IT architecture"
+    }
+  },
+
+  "solutions": {
+    "title": "Solutions",
+    "first": "Involvement of European experts to design optimal business solutions",
+    "second": "Involvement of IT experts from Russia to design the optimal architecture and transfer knowledge on best IT practices",
+    "third": "Development of local competencies through teamwork with European and Russian specialists"
+  },
+
+  "our_service": {
+    "title": "Our Services",
+    "text": "A+ Solutions offers a wide range of information technology services, from IT strategy development to the development of a wide range of applications"
+  },
+
+  "services": {
+    "service1": "IT Strategy <br>IT Architecture <br> IT Processes",
+    "service2": "Data Management Enterprise Data Warehouse",
+    "service3": "Data Governance",
+    "service4": "Mobile and web applications",
+    "service5": "Application Integration",
+    "service6": "Anti Money Laundering",
+    "service7": "Automation of back office processes",
+    "service8": "Robot Process Automation"
+  },
+
+  "our_partners": {
+    "header": "Our Partners",
+    "business_consulting": {
+      "header": "Business consulting",
+      "text": "To effectively use digital technologies, IT solutions must be inextricably linked to business needs. Together with the international company Adastra Business Consulting, we offer an approach that will ensure the synergy of business strategy and IT solutions. Adastra Business Consulting provides its expertise in the following business areas: credit risk management, collection, scoring, retail and corporate customer approval, fraud prevention, customer value management, business process design and optimization, etc",
+      "adventages1": " Western Know-How",
+      "adventages2": "Efficient Business Processes",
+      "adventages3": "Efficient Resources",
+      "adventages4": "Best Architectural Practice"
+    },
+
+    "control_quality": {
+      "header": "Data Quality Management and Data Governance",
+      "text": "Ataccama is a global company providing its customers with the Ataccama ONE all-in-one platform for data quality, master data and metadata management. Ataccama specializes in end-to-end Data Governance solutions to help companies maintain processes and add value to data. Among Ataccama clients: Ipak Yuli Bank, Kaspibank, Raiffeisenbank, Yandex Market, MTS, Tele2 and many others",
+      "adventages1": "Data Profiling",
+      "adventages2": "Data Quality Assurance",
+      "adventages3": "Management of Master Data and NSI",
+      "adventages4": "Metadata Management"
+    },
+
+    "self_service": {
+      "header": "Self-service analytics",
+      "text": "Alteryx provides data analysts and data scientists with a tool for self-analysis of data - Alteryx Designer. With over 250 built-in functions, business users can quickly profile, prepare, process and analyze their data without having to write SQL code or software scripts. If earlier, building an analytical model or report required several tools and even several different specialists, today one tool is enough - Alteryx Designer",
+      "adventages1": "Data Mixing and Preparation",
+      "adventages2": "Data analysis",
+      "adventages3": "Dissemination of Results"
+    }
+  },
+
+  "useful_link": "Useful links",
+  "contacts": "Contact"
 }
