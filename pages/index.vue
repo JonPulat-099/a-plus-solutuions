@@ -317,6 +317,7 @@ export default {
 
 #a_plus_solutions {
   overflow: hidden !important;
+  margin: 0 auto;
 }
 
 #why {

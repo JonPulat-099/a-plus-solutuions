@@ -2,7 +2,7 @@
   <div class="min-h-screen font-sans antialiased relative">
     <div class="relative">
       <div
-        class="absolute top-0 left-0 w-full h-[125vh] sm:h-[225vh] lg:h-[125vh] cover-gradient-2 sm:cover-gradient"
+        class="absolute top-0 left-0 w-full"
       ></div>
       <BaseNavbar />
 
@@ -21,12 +21,6 @@ export default {
 </script>
 
 <style>
-.cover-gradient {
-  background: #cdeef7;
-}
-.cover-gradient-2 {
-  background: #cdeef7;
-}
 
 .slide-enter-active {
   -moz-transition-duration: 0.3s;
