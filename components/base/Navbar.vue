@@ -4,7 +4,12 @@
       <div class="w-full flex flex-col lg:flex-row items-center space-x-4 xl:space-x-8">
         <div class="relative w-full flex flex-row items-center justify-between py-6">
           <div>
-            <img :src="require('~/assets/img/logo/logo.svg')" class="w-32 xl:w-44 cursor-pointer" alt="A+ Solutions Logo" @click="$router.push('/')" />
+            <img
+              :src="require('~/assets/img/logo/logo.svg')"
+              class="w-32 xl:w-44 cursor-pointer"
+              alt="A+ Solutions Logo"
+              @click="goToMain"
+            />
           </div>
           <button class="rounded-lg lg:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
             <SegmentIcon v-if="!open" :size="24" />
@@ -58,6 +63,7 @@
   </nav>
 </template>
 <script>
+import $ from 'jquery'
 export default {
   name: 'BaseNavbar',
   data() {
@@ -73,9 +79,48 @@ export default {
 
   methods: {
     changeLocale(lang) {
+      this.$i18n.locale = lang
       this.$router.push(this.switchLocalePath(lang))
     },
+
+    goToMain() {
+      this.$router.push('/');
+      $('html, body').stop().animate({
+          'scrollTop': 0
+      }, 300, 'swing');
+    }
   },
 }
 </script>
-<style></style>
+<style>
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky {
+  background: #f8f8f8;
+  padding: 0 !important;
+  -webkit-box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);
+  box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sticky .flex {
+  padding: 5px 30px;
+}
+
+.sticky .relative.w-full.flex {
+  width: 80vw;
+  padding: 5px auto;
+  justify-content: space-between;
+}
+
+.sticky .relative.w-full.flex img {
+  width: 9rem;
+}
+</style>

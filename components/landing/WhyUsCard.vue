@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: 'WhyCard',
+  name: 'WhyUsCard',
   props: {
     text: {
       type: String,

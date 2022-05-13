@@ -157,6 +157,7 @@ import aosMixin from '@/mixins/aos'
 export default {
   name: 'IndexPage',
   mixins: [aosMixin],
+  layout: "base",
   data() {
     return {
       selected: 0,
@@ -276,20 +277,9 @@ export default {
   },
 
   mounted() {
-    // const timVine = document.getElementById('tim-vine')
-    const navbar = document.getElementById('navbar')
-
-    const navPos = navbar.getBoundingClientRect().top
-
-    window.addEventListener('scroll', (e) => {
-      const scrollPos = window.scrollY
-      if (scrollPos > navPos) {
-        navbar.classList.add('sticky')
-        // header.classList.add('navbarOffsetMargin')
-      } else {
-        navbar.classList.remove('sticky')
-        // header.classList.remove('navbarOffsetMargin')
-      }
+    window.addEventListener("scroll", function() {
+      const navbar = document.querySelector("#navbar")
+      navbar.classList.toggle("sticky", window.scrollY > 0)
     })
   },
 }
@@ -299,33 +289,6 @@ export default {
   -webkit-box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);
   box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);
-}
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: #f8f8f8;
-  padding: 0 !important;
-  -webkit-box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);
-  -moz-box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);
-  box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.sticky .flex {
-  padding: 5px 30px;
-}
-
-.sticky .relative.w-full.flex {
-  width: 80vw;
-  padding: 5px auto;
-  justify-content: space-between;
-}
-
-.sticky .relative.w-full.flex img {
-  width: 9rem;
 }
 
 #a_plus_solutions {

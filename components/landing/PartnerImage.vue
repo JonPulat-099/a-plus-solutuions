@@ -5,6 +5,7 @@
 </template>
 <script>
 export default {
+  name: "LandingPartnerImage",
   props: {
     img: {
       type: String,

@@ -11,7 +11,7 @@
 </template>
 <script>
 export default {
-  name: "PartnerInfo",
+  name: "LandingPartnerInfo",
   props: {
     partner: {
       type: Object,
