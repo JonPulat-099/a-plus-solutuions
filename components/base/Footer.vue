@@ -101,9 +101,9 @@
         </div>
       </div>
     </div>
-    <div class="text-center p-6 bg-gray-200">
-      <span>© 2021 Copyright:</span>
-      <p class="text-gray-600 font-semibold">A+ Solutions</p>
+    <div class=" p-6 bg-gray-100 text-gray-600">
+      
+      <p class="text-gray-600">© 2021 Copyright: <span class="font-semibold ml-2">A+ Solutions</span></p>
     </div>
   </footer>
 </template>

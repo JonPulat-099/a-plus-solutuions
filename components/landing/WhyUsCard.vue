@@ -7,7 +7,7 @@
       <div class="flex items-center rounded-full image__card" :style="`background: ${color}`">
         <img class="m-4 object-cover" :src="require(`~/assets/img/plus/${img}`)" alt="" />
       </div>
-      <p class="text-lg mt-4" style="font-size: 16px;">
+      <p class="text-lg mt-4" style="font-size: 16px">
         {{ text }}
       </p>
     </div>
@@ -41,10 +41,11 @@ export default {
 }
 
 .custom__cards {
-  box-shadow: 0px 0 16px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);
+  box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);
   padding: 15px;
   background: #fff;
   margin: 0 auto;
 }
-
 </style>

@@ -22,7 +22,7 @@
 
     <!-- Crypto statistic section -->
     <section
-      class="max-w-screen-xl mx-2 sm:mx-auto px-4 sm:px-6 lg:px-0 py-6 pb-20 sm:py-8 bg-white shadow-lg sm:shadow-md transform lg:-translate-y-12"
+      class="team max-w-screen-xl mx-2 sm:mx-auto px-4 sm:px-6 lg:px-0 py-6 pb-20 sm:py-8 bg-white transform lg:-translate-y-12"
     >
       <div class="w-full flex flex-col lg:flex-row items-center justify-center">
         <LandingAboutCard
@@ -52,8 +52,8 @@
     </section>
 
     <!-- Partners section -->
-    <section class="relative max-w-full sm:mx-6 mb-24 overflow-hidden">
-      <div class="w-full px-6 sm:px-0 py-16 flex flex-col items-center justify-center space-y-4 text-center">
+    <section class="base__container relative max-w-full sm:px-6 mt-14 mb-24 overflow-hidden bg-[#f8f8f8]">
+      <div class="experience w-full px-6 sm:px-0 py-16 flex flex-col items-center justify-center space-y-4 text-center">
         <h2 data-aos="flip-down" class="text-2xl text-neutral-800 font-semibold text-[#1B778B]">
           {{ $t('exprience_project') }}
         </h2>
@@ -71,7 +71,7 @@
     </section>
 
     <!-- Getting started section -->
-    <section id="why_us" class="relative m sm:mx-4 xl:mx-10 mt-24 shadow overflow-hidden">
+    <section id="why_us" class="base__container relative m sm:mx-4 xl:mx-10 mt-24 overflow-hidden">
       <div class="w-full py-16">
         <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center mb-8 text-[#1B778B]">
           {{ $t('why_us') }}
@@ -83,17 +83,23 @@
     </section>
 
     <section id="solutions" class="relative max-w-full mt-24 overflow-hidden">
-      <div class="m py-16">
-        <h2 data-aos="flip-down" class="text-2xl sm:text-3xl font-semibold text-center text-[#1B778B]">
+      <div class="base__container py-16">
+        <h2 data-aos="flip-down" class="text-2xl sm:text-3xl font-semibold text-center text-[#1B778B] mb-6">
           {{ $t('default_sitation.title') }}
         </h2>
         <div
           data-aos="fade-up"
           class="relative w-full flex items-stretch flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8 mb-12"
         >
-          <LandingWhyUsCard v-for="(d, i) in default_sitation" :key="i" :text="d.text" :img="d.img" :color="d.bg_color" />
+          <LandingWhyUsCard
+            v-for="(d, i) in default_sitation"
+            :key="i"
+            :text="d.text"
+            :img="d.img"
+            :color="d.bg_color"
+          />
         </div>
-        <h2 data-aos="flip-down" class="text-2xl sm:text-3xl font-semibold text-center text-[#1B778B]">
+        <h2 data-aos="flip-down" class="text-2xl sm:text-3xl font-semibold text-center text-[#1B778B] mt-10 mb-6">
           {{ $t('solutions.title') }}
         </h2>
         <div
@@ -106,7 +112,7 @@
     </section>
 
     <!-- Getting started section services -->
-    <section id="our_services" class="relative max-w-full sm:mx-4 xl:mx-10 my-24 overflow-hidden">
+    <section id="our_services" class="base__container relative max-w-full sm:mx-4 xl:mx-10 my-24 overflow-hidden">
       <div class="w-full p-16 flex flex-col items-center">
         <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center mb-5 text-[#1B778B]">
           {{ $t('our_service.title') }}
@@ -211,7 +217,7 @@ export default {
       experience: [
         'iyb.png',
         'rff_bank.png',
-        'kaspi-bank.jpg',
+        'kaspi-bank.png',
         'sber_bank.png',
         'pkb.png',
         'otkrity_bank.png',
@@ -289,13 +295,20 @@ export default {
 }
 </script>
 <style>
+.team {
+  -webkit-box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);
+  box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);
+}
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #cdeef7;
+  background: #f8f8f8;
   padding: 0 !important;
-  box-shadow: 0 5px 25px 0 rgba(122, 122, 122, 0.6);
+  -webkit-box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);
+  box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -326,15 +339,15 @@ export default {
 
 #why_us {
   margin: 0 auto;
-  box-shadow: 0 5px 25px 0 rgba(122, 122, 122, 0.6);
 }
 
 #solutions {
-  background-color: #cdeef7;
+  background-color: #f8f8f8;
 }
 
-.service {
-  overflow: hidden;
+.base__container .w-full{
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .service p {
@@ -344,7 +357,9 @@ export default {
   justify-content: center;
   padding: 10px;
   color: #1b778b;
-  box-shadow: 0px 0 25px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);
+  box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);
 }
 
 .why_us--items {
@@ -358,4 +373,5 @@ export default {
   width: 25%;
   min-width: 295px;
 }
+
 </style>
