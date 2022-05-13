@@ -1,5 +1,5 @@
 <template>
-  <nav id="navbar" class="relative z-10 w-full text-neutral-800">
+  <nav id="navbar" class="relative z-10 w-full text-neutral-800" :class="scrollable ? 'sticky' : ''">
     <div class="flex flex-col max-w-screen-xl px-8 mx-auto lg:items-center lg:justify-between lg:flex-row py-4">
       <div class="w-full flex flex-col lg:flex-row items-center space-x-4 xl:space-x-8">
         <div class="relative w-full flex flex-row items-center justify-between py-6">
@@ -39,20 +39,20 @@
                 class="flex lg:absolute flex-col max-w-42 py-1 lg:bg-white rounded-md lg:shadow-md pl-2 lg:pl-0"
               >
                 <li>
-                  <a
-                    href="javascript:void(0)"
-                    class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100"
+                  <p
+                    class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer"
                     @click="changeLocale('ru')"
-                    >Русский</a
                   >
+                    Русский
+                  </p>
                 </li>
                 <li>
-                  <a
-                    href="javascript:void(0)"
-                    class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100"
+                  <p
+                    class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer"
                     @click="changeLocale('en')"
-                    >English</a
                   >
+                    English
+                  </p>
                 </li>
               </ul>
             </transition>
@@ -74,26 +74,37 @@ export default {
         en: 'English',
         ru: 'Русский',
       },
+      scrollable: false,
     }
+  },
+
+  mounted() {
+    window.addEventListener('scroll', () => {
+      this.scrollable = true
+    })
   },
 
   methods: {
     changeLocale(lang) {
       this.$i18n.locale = lang
       this.$router.push(this.switchLocalePath(lang))
+      this.dropdownNavbar = false
     },
 
     goToMain() {
-      this.$router.push('/');
-      $('html, body').stop().animate({
-          'scrollTop': 0
-      }, 300, 'swing');
-    }
+      this.$router.push('/')
+      $('html, body').stop().animate(
+        {
+          scrollTop: 0,
+        },
+        300,
+        'swing'
+      )
+    },
   },
 }
 </script>
 <style>
-
 #navbar {
   position: fixed;
   top: 0;
