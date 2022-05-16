@@ -1,5 +1,5 @@
 <template>
-  <nav id="navbar" class="relative z-10 w-full text-neutral-800" :class="scrollable ? 'sticky' : ''">
+  <nav id="navbar" class="relative z-10 w-full text-neutral-800 bg-[#ffffff]" :class="scrollable ? 'sticky' : ''">
     <div class="flex flex-col max-w-screen-xl px-8 mx-auto lg:items-center lg:justify-between lg:flex-row py-4">
       <div class="w-full flex flex-col lg:flex-row items-center space-x-4 xl:space-x-8">
         <div class="relative w-full flex flex-row items-center justify-between py-6">
@@ -89,6 +89,7 @@ export default {
       this.$i18n.locale = lang
       this.$router.push(this.switchLocalePath(lang))
       this.dropdownNavbar = false
+      this.open = false
     },
 
     goToMain() {
@@ -111,7 +112,7 @@ export default {
   width: 100%;
 }
 .sticky {
-  background: #f8f8f8;
+  background: #f8f8f8 !important;
   padding: 0 !important;
   -webkit-box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);

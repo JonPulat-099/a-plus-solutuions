@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img :src="`/images/experience/${img}`" class="sm:w-1/2 lg:w-72 mx-3 my-4" alt="" />
+    <img :src="`/images/experience/${img}`" class="sm:w-1/2 lg:w-72 m-4" alt="" />
   </div>
 </template>
 <script>
@@ -16,11 +16,13 @@ export default {
 </script>
 <style scoped>
 div {
-  flex-basis: 22%;
-  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  flex-basis: 20%;
+  min-width: 150px;
 }
 img {
-  max-height: 80px;
+  max-height: 70px;
   object-fit: contain;
 }
 </style>

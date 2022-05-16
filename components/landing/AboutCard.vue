@@ -37,6 +37,6 @@ export default {
 </script>
 <style>
 .custom__card {
-  background: #cdeef7;
+  background: #f8f8f8;
 }
 </style>

@@ -8,7 +8,7 @@
             data-aos="fade-right"
             data-aos-once="true"
             class="text-[1.5rem] sm:text-3xl xl:text-3xl font-bold leading-tight capitalize mb-4 text-center text-[#1B778B]"
-            style="word-spacing: 12px;"
+            style="word-spacing: 8px;"
           >
             {{ $t('header.first') }} <br />
             {{ $t('header.second') }} <br />
@@ -31,7 +31,7 @@
           :title="$t('header.command.simple')"
           :subtitle="$t('header.command.strong')"
           img="/images/about/team(1).png"
-          class="xl:border-r border-gray-200 lg:px-8"
+          class="lg:px-8 aos-animate"
         />
         <LandingAboutCard
           data-aos="fade-up"
@@ -39,7 +39,7 @@
           :title="$t('header.national.simple')"
           :subtitle="$t('header.national.strong')"
           img="/images/about/uzb1.png"
-          class="xl:border-r border-gray-200 lg:px-8"
+          class="lg:px-8"
         />
         <LandingAboutCard
           data-aos="fade-up"
@@ -59,7 +59,7 @@
           {{ $t('exprience_project') }}
         </h2>
         <!-- <p data-aos="flip-down" class="paragraph">We're partners with countless major organisations around the globe</p> -->
-        <div data-aos="fade-up" class="flex flex-wrap items-center justify-center">
+        <div data-aos="fade-up" class="w-full grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 justify-items-center">
           <LandingPartnerImage
             v-for="img in experience"
             :key="img"
