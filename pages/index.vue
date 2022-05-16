@@ -139,13 +139,13 @@
       <div class="relative max-w-screen-xl px-4 sm:px-2 mx-auto">
         <div data-aos="fade-right" class="px-4 sm:px-6 mt-8">
           <h2 class="text-4xl font-semibold text-center mb-10 text-[#1B778B]">{{ $t('our_partners.header') }}</h2>
-          <h3 class="text-[1.7rem] mb-6 text-semibold">{{ $t('our_partners.business_consulting.header') }}</h3>
+          <h3 class="text-[1.7rem] mb-6 font-bold">{{ $t('our_partners.business_consulting.header') }}</h3>
           <LandingPartnerInfo data-aos="fade-up" :partner="abc" />
 
-          <h3 class="text-[1.7rem] mb-6 text-semibold">{{ $t('our_partners.control_quality.header') }}</h3>
+          <h3 class="text-[1.7rem] mb-6 font-bold">{{ $t('our_partners.control_quality.header') }}</h3>
           <LandingPartnerInfo data-aos="fade-up" :partner="ataccama" />
 
-          <h3 class="text-[1.7rem] mb-6 text-semibold">{{ $t('our_partners.self_service.header') }}</h3>
+          <h3 class="text-[1.7rem] mb-6 font-bold">{{ $t('our_partners.self_service.header') }}</h3>
           <LandingPartnerInfo data-aos="fade-up" :partner="alteryx" />
         </div>
       </div>
