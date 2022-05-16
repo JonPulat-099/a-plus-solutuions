@@ -7,7 +7,7 @@
           <h1
             data-aos="fade-right"
             data-aos-once="true"
-            class="text-[1.5rem] sm:text-3xl xl:text-3xl font-bold leading-tight capitalize mb-4 text-center text-[#1B778B]"
+            class="text-[1.5rem] sm:text-3xl xl:text-3xl font-bold leading-tight capitalize mb-10 text-center text-[#1B778B]"
             style="word-spacing: 8px;"
           >
             {{ $t('header.first') }} <br />
