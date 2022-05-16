@@ -7,7 +7,8 @@
           <h1
             data-aos="fade-right"
             data-aos-once="true"
-            class="text-[1.5rem] sm:text-3xl xl:text-3xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10 mb-4 text-center text-[#1B778B]"
+            class="text-[1.5rem] sm:text-3xl xl:text-3xl font-bold leading-tight capitalize mb-4 text-center text-[#1B778B]"
+            style="word-spacing: 12px;"
           >
             {{ $t('header.first') }} <br />
             {{ $t('header.second') }} <br />
@@ -73,7 +74,7 @@
     <!-- Getting started section -->
     <section id="why_us" class="base__container relative m sm:mx-4 xl:mx-10 mt-24 overflow-hidden">
       <div class="w-full py-16">
-        <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center mb-8 text-[#1B778B]">
+        <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center mb-10 text-[#1B778B]">
           {{ $t('why_us') }}
         </h2>
         <div data-aos="fade-up" class="px-4 xl:px-10 mt-16 sm:mt-8 why_us--items">
@@ -114,7 +115,7 @@
     <!-- Getting started section services -->
     <section id="our_services" class="base__container relative max-w-full sm:mx-4 xl:mx-10 my-24 overflow-hidden">
       <div class="w-full p-16 flex flex-col items-center">
-        <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center mb-5 text-[#1B778B]">
+        <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center mb-10 text-[#1B778B]">
           {{ $t('our_service.title') }}
         </h2>
         <p data-aos="fade-up" class="text-center mb-8 xl:w-2/3">
@@ -144,7 +145,7 @@
           <h3 class="text-[1.7rem] mb-6 text-semibold">{{ $t('our_partners.control_quality.header') }}</h3>
           <LandingPartnerInfo data-aos="fade-up" :partner="ataccama" />
 
-          <h3 class="text-[1.7rem] mb-6 text-semibold">{{ $t('our_partners.control_quality.header') }}</h3>
+          <h3 class="text-[1.7rem] mb-6 text-semibold">{{ $t('our_partners.self_service.header') }}</h3>
           <LandingPartnerInfo data-aos="fade-up" :partner="alteryx" />
         </div>
       </div>
