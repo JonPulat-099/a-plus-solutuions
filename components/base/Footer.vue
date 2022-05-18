@@ -1,7 +1,7 @@
 <template>
   <footer id="contacts" class="text-center lg:text-left bg-gray-100 text-gray-600">
     <div class="mx-6 py-10 text-center md:text-left">
-      <div class="grid grid-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="max-w-screen-xl mx-auto grid grid-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="">
           <h6 class="uppercase font-semibold mb-4 flex items-center justify-center md:justify-start">
             <img width="180" src="~/assets/img/logo/logo.svg" alt="" />
@@ -101,7 +101,7 @@
         </div>
       </div>
     </div>
-    <div class="p-6 bg-gray-100 text-gray-600">
+    <div class="max-w-screen-xl mx-auto p-6 bg-gray-100 text-gray-600">
       <p class="text-gray-600">© 2021 Copyright: <span class="font-semibold ml-2">A+ Solutions</span></p>
     </div>
   </footer>

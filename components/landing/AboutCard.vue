@@ -8,7 +8,7 @@
           <img class="w-28 h-28 object-contain" :src="img" alt="Sunset in the mountains" />
         </div>
         <div class="px-6 py-4">
-          <p class="text-center text-xl text-base">
+          <p class="text-center text-xl text-base text-[18px]">
             {{ title }} <span class="font-bold text-[#1B778B]"> {{ subtitle }} </span>
           </p>
         </div>

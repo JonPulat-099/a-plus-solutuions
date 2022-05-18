@@ -14,7 +14,7 @@
             {{ $t('header.second') }} <br />
             {{ $t('header.third') }}
           </h1>
-          <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="paragraph sm:block">
+          <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="paragraph sm:block text-[18px]">
             {{ $t('header.text') }}
           </p>
         </div>
@@ -31,7 +31,7 @@
           :title="$t('header.command.simple')"
           :subtitle="$t('header.command.strong')"
           img="/images/about/team(1).png"
-          class="lg:px-8 aos-animate"
+          class="lg:px-8 aos-animate text-[18px]"
         />
         <LandingAboutCard
           data-aos="fade-up"
@@ -39,7 +39,7 @@
           :title="$t('header.national.simple')"
           :subtitle="$t('header.national.strong')"
           img="/images/about/uzb1.png"
-          class="lg:px-8"
+          class="lg:px-8 text-[18px]"
         />
         <LandingAboutCard
           data-aos="fade-up"
@@ -47,7 +47,7 @@
           :title="$t('header.international.simple')"
           :subtitle="$t('header.international.strong')"
           img="/images/about/goal.png"
-          class="lg:px-8"
+          class="lg:px-8 text-[18px]"
         />
       </div>
     </section>
@@ -55,11 +55,11 @@
     <!-- Partners section -->
     <section class="base__container relative max-w-full sm:px-6 mt-14 mb-24 overflow-hidden bg-[#f8f8f8]">
       <div class="experience w-full px-6 sm:px-0 py-16 flex flex-col items-center justify-center space-y-4 text-center">
-        <h2 data-aos="flip-down" class="text-2xl text-neutral-800 font-semibold text-[#1B778B]">
+        <h2 data-aos="flip-down" class="text-2xl text-neutral-800 font-semibold text-[#1B778B] text-[30px] mb-12">
           {{ $t('exprience_project') }}
         </h2>
         <!-- <p data-aos="flip-down" class="paragraph">We're partners with countless major organisations around the globe</p> -->
-        <div data-aos="fade-up" class="w-full grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 justify-items-center">
+        <div data-aos="fade-up" class="w-full grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 justify-items-center mt-6">
           <LandingPartnerImage
             v-for="img in experience"
             :key="img"
@@ -74,7 +74,7 @@
     <!-- Getting started section -->
     <section id="why_us" class="base__container relative m sm:mx-4 xl:mx-10 mt-24 overflow-hidden">
       <div class="w-full py-16">
-        <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center mb-10 text-[#1B778B]">
+        <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center mb-10 text-[#1B778B] uppercase" style="word-spacing:6px;">
           {{ $t('why_us') }}
         </h2>
         <div data-aos="fade-up" class="px-4 xl:px-10 mt-16 sm:mt-8 why_us--items">
@@ -118,17 +118,17 @@
         <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center mb-10 text-[#1B778B]">
           {{ $t('our_service.title') }}
         </h2>
-        <p data-aos="fade-up" class="text-center mb-8 xl:w-2/3">
+        <p data-aos="fade-up" class="text-center mb-12 py-6 xl:w-2/3 text-[18px]">
           {{ $t('our_service.text') }}
         </p>
-        <div data-aos="fade-up" class="w-full flex flex-row flex-wrap place-items-center g-screen">
+        <div data-aos="fade-up" class="w-full flex flex-row flex-wrap place-items-center items-stretch g-screen">
           <div
             v-for="(s, i) in services"
             :key="i"
-            class="w-full p-2 md:w-1/2 lg:w-1/3 xl:w-1/4 sm:w-1/1 service"
+            class="w-full p-2 md:w-1/2 lg:w-1/3 xl:w-1/4 sm:w-1/1 service mb-12"
             :class="i == 7 || i == 6 ? 'md:w-1/2 lg:w-1/2 ' : 'md:w-1/2 lg:w-1/3'"
           >
-            <p class="w-full rounded-lg font-semibold text-center" v-html="s"></p>
+            <p class="w-full h-full rounded-lg font-semibold text-center" v-html="s"></p>
           </div>
         </div>
       </div>
@@ -314,12 +314,17 @@ export default {
   margin: 0 auto;
 }
 
+.service {
+  margin: 0 0 40px 0 !important;
+}
+
 .service p {
-  min-height: 100px;
+  min-height: 150px !important;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 25px 10px;
+  font-size: 20px;
   color: #1b778b;
   -webkit-box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);

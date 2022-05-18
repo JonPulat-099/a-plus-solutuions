@@ -1,11 +1,16 @@
 <template>
   <div>
-    <img :src="`/images/experience/${img}`" class="sm:w-1/2 lg:w-72 m-4" alt="" />
+    <img
+      :src="`/images/experience/${img}`"
+      class="sm:w-1/2 lg:w-72 m-4"
+      alt=""
+      :style="img.includes('pkb') || img.includes('ak_bars_bank') ? 'max-height: 75px !important' : ''"
+    />
   </div>
 </template>
 <script>
 export default {
-  name: "LandingPartnerImage",
+  name: 'LandingPartnerImage',
   props: {
     img: {
       type: String,
@@ -22,7 +27,7 @@ div {
   min-width: 150px;
 }
 img {
-  max-height: 70px;
+  max-height: 60px;
   object-fit: contain;
 }
 </style>
