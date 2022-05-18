@@ -221,17 +221,18 @@ export default {
         'rff_bank.png',
         'kaspi-bank.png',
         'sber_bank.png',
-        'pkb.png',
         'otkrity_bank.png',
-        'ak_bars_bank.png',
         'ros_bank.png',
         'ya_market.png',
         'tele2.png',
         'x5_retail.png',
-        'mtc.png',
         'avast.png',
         'erste_bank.png',
         'finnair.png',
+        'gazprom.png',
+        'pkb.png',
+        'ak_bars_bank.png',
+        'mtc.png',
       ],
       services: [
         this.$t('services.service1'),
@@ -246,6 +247,7 @@ export default {
 
       abc: {
         img: 'abc.svg',
+        website: "https://www.adastra-abc.com/en/",
         text: this.$t('our_partners.business_consulting.text'),
         advantages: [
           this.$t('our_partners.business_consulting.adventages1'),
@@ -256,6 +258,7 @@ export default {
       },
       ataccama: {
         img: 'ataccama.png',
+        website: "https://www.ataccama.com/",
         text: this.$t('our_partners.control_quality.text'),
         advantages: [
           this.$t('our_partners.control_quality.adventages1'),
@@ -267,6 +270,7 @@ export default {
 
       alteryx: {
         img: 'alteryx.png',
+        website: "https://www.alteryx.com/",
         text: this.$t('our_partners.self_service.text'),
         advantages: [
           this.$t('our_partners.self_service.adventages1'),

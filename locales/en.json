@@ -25,7 +25,7 @@
     }
   },
 
-  "exprience_project": "PROJECT EXPERIENCE OF FOUNDERS AND MANAGERS OF A+ SOLUTIONS",
+  "exprience_project": "Project experience of founders and managers of A+ Solutions",
 
   "why_us": "A+ Solutions advantages",
   "best_practice": {
@@ -35,7 +35,7 @@
 
   "kompetension": {
     "title": "Competencies",
-    "text": "Qualified IT Resources"
+    "text": "Qualified IT resources"
   },
 
   "efficiency": {
@@ -78,7 +78,7 @@
   "our_partners": {
     "header": "Our Partners",
     "business_consulting": {
-      "header": "Business consulting",
+      "header": "Business Consulting",
       "text": "To effectively use digital technologies, IT solutions must be inextricably linked to business needs. Together with the international company Adastra Business Consulting, we offer an approach that will ensure the synergy of business strategy and IT solutions. Adastra Business Consulting provides its expertise in the following business areas: credit risk management, collection, scoring, retail and corporate customer approval, fraud prevention, customer value management, business process design and optimization, etc",
       "adventages1": " Western Know-How",
       "adventages2": "Efficient Business Processes",
@@ -105,5 +105,7 @@
   },
 
   "useful_link": "Useful links",
-  "contacts": "Contact"
+  "contacts": "Contact",
+  "address_1": "100070 Tashkent, Uzbekistan",
+  "address_2": "Intersection of Nukus street and Mironshokh street 8"
 }

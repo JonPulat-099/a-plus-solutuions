@@ -1,11 +1,13 @@
 <template>
   <div class="mb-15" style="margin: 0 0 80px 0">
-    <img :src="`/images/partner/${partner.img}`" :class="partner.img.includes('abc') ? 'base__height' : ''" alt="" />
+    <a :href="`${partner.website}`" target="_blank">
+      <img :src="`/images/partner/${partner.img}`" :class="partner.img.includes('abc') ? 'base__height' : ''" alt="" />
+    </a>
     <p class="text-[18px] mt-6"> {{ partner.text }} </p>
     <div class="w-full flex flex-row flex-wrap place-items-center g-screen rounded-lg">
       <ul class="mt-5 blocks">
         <li v-for="(s,i) in partner.advantages" :key="i" class="text-[18px]">
-           <img src="/images/diamond-symbol.png" alt="">
+           <img src="/images/diamond.svg" alt="">
            {{ s }} </li>
       </ul>
     </div>
@@ -49,8 +51,9 @@ img {
 }
 
 .blocks li img {
-  width: 16px !important;
-  height: 16px !important;
+  width: 14px !important;
+  height: 14px !important;
   margin: 0 5px 0 0;
+  
 }
 </style>
