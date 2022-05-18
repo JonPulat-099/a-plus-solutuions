@@ -1,13 +1,13 @@
 <template>
   <div class="w-full lg:w-1/3 mt-6 lg:mt-0 overflow-hidden space-y-6" v-bind="$attrs">
-    <div class="flex flex-col">
-      <div class="grid place-items-center g-screen -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+    <div class="flex flex-col items-stretch">
+      <div class="grid place-items-center content-start g-screen overflow-x-auto">
         <div
-          class="w-32 h-32 m-4 px-2 sm:px-6 py-2 flex items-center rounded-full border-4 border-slate-50 custom__card"
+          class="w-32 h-32 p-5 mb-6 flex items-center rounded-full border-4 border-slate-50 custom__card"
         >
           <img class="w-28 h-28 object-contain" :src="img" alt="Sunset in the mountains" />
         </div>
-        <div class="px-6 py-4">
+        <div class="px-6">
           <p class="text-center text-xl text-base text-[18px]">
             {{ title }} <span class="font-bold text-[#1B778B]"> {{ subtitle }} </span>
           </p>

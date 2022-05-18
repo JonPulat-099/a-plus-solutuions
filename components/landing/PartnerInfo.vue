@@ -1,7 +1,7 @@
 <template>
   <div class="mb-15" style="margin: 0 0 80px 0">
     <a :href="`${partner.website}`" target="_blank">
-      <img :src="`/images/partner/${partner.img}`" :class="partner.img.includes('abc') ? 'base__height' : ''" alt="" />
+      <img :src="`/images/partner/${partner.img}`" alt="" />
     </a>
     <p class="text-[18px] mt-6"> {{ partner.text }} </p>
     <div class="w-full flex flex-row flex-wrap place-items-center g-screen rounded-lg">
@@ -28,10 +28,6 @@ export default {
 img {
   max-width: 290px;
   height: 45px !important;
-}
-
-.base__height {
-  max-height: 40px !important;
 }
 
 .blocks{

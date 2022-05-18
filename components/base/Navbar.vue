@@ -93,7 +93,8 @@ export default {
     },
 
     goToMain() {
-      this.$router.push('/')
+      const path = this.$route.path
+      this.$router.push(path)
       $('html, body').stop().animate(
         {
           scrollTop: 0,

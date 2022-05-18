@@ -25,7 +25,7 @@
     <section
       class="team max-w-screen-xl mx-2 sm:mx-auto px-4 sm:px-6 lg:px-0 py-6 pb-20 sm:py-8 bg-white transform lg:-translate-y-12"
     >
-      <div class="w-full flex flex-col lg:flex-row items-center justify-center">
+      <div class="w-full flex flex-col lg:flex-row">
         <LandingAboutCard
           data-aos="fade-up"
           :title="$t('header.command.simple')"
@@ -73,8 +73,8 @@
 
     <!-- Getting started section -->
     <section id="why_us" class="base__container relative m sm:mx-4 xl:mx-10 mt-24 overflow-hidden">
-      <div class="w-full py-16">
-        <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center mb-10 text-[#1B778B] uppercase" style="word-spacing:6px;">
+      <div class="w-full py-18">
+        <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center text-[#1B778B] uppercase" style="word-spacing:6px;">
           {{ $t('why_us') }}
         </h2>
         <div data-aos="fade-up" class="px-4 xl:px-10 mt-16 sm:mt-8 why_us--items">
@@ -84,7 +84,7 @@
     </section>
 
     <section id="solutions" class="relative max-w-full mt-24 overflow-hidden">
-      <div class="base__container py-16">
+      <div class="base__container py-20">
         <h2 data-aos="flip-down" class="text-2xl sm:text-3xl font-semibold text-center text-[#1B778B] mb-6">
           {{ $t('default_sitation.title') }}
         </h2>
@@ -100,7 +100,7 @@
             :color="d.bg_color"
           />
         </div>
-        <h2 data-aos="flip-down" class="text-2xl sm:text-3xl font-semibold text-center text-[#1B778B] mt-10 mb-6">
+        <h2 data-aos="flip-down" class="text-2xl sm:text-3xl font-semibold text-center text-[#1B778B] mt-14 mb-6">
           {{ $t('solutions.title') }}
         </h2>
         <div
@@ -113,9 +113,9 @@
     </section>
 
     <!-- Getting started section services -->
-    <section id="our_services" class="base__container relative max-w-full sm:mx-4 xl:mx-10 my-24 overflow-hidden">
-      <div class="w-full p-16 flex flex-col items-center">
-        <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center mb-10 text-[#1B778B]">
+    <section id="our_services" class="base__container relative max-w-full sm:mx-4 xl:mx-10 my-18 overflow-hidden">
+      <div class="w-full flex flex-col items-center">
+        <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center mb-10 text-[#1B778B] mt-4">
           {{ $t('our_service.title') }}
         </h2>
         <p data-aos="fade-up" class="text-center mb-12 py-6 xl:w-2/3 text-[18px]">
@@ -135,9 +135,9 @@
     </section>
 
     <!-- Advanced trading tools section -->
-    <section id="partners" class="relative max-w-full my-10 py-16 overflow-hidden">
+    <section id="partners" class="relative max-w-full mb-10 overflow-hidden">
       <div class="relative max-w-screen-xl px-4 sm:px-2 mx-auto">
-        <div data-aos="fade-right" class="px-4 sm:px-6 mt-8">
+        <div data-aos="fade-right" class="px-4 sm:px-6">
           <h2 class="text-4xl font-semibold text-center mb-10 text-[#1B778B]">{{ $t('our_partners.header') }}</h2>
           <h3 class="text-[1.7rem] mb-6 font-bold">{{ $t('our_partners.business_consulting.header') }}</h3>
           <LandingPartnerInfo data-aos="fade-up" :partner="abc" />
@@ -290,6 +290,11 @@ export default {
 }
 </script>
 <style>
+
+.header__section {
+  padding: 0 15px;
+}
+
 .team {
   -webkit-box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);
@@ -306,11 +311,20 @@ export default {
 }
 
 #why_us {
+  padding: 85px 0 0 0;
   margin: 0 auto;
+}
+
+#why_us h2 {
+  margin: 0 0 70px 0;
 }
 
 #solutions {
   background-color: #f8f8f8;
+}
+
+#our_services {
+  padding: 70px 0 0 0;
 }
 
 .base__container .w-full{
@@ -347,4 +361,7 @@ export default {
   min-width: 295px;
 }
 
+#partners {
+  padding: 80px 0 0 0;
+}
 </style>
