@@ -118,7 +118,7 @@
         <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center mb-10 text-[#1B778B] mt-4">
           {{ $t('our_service.title') }}
         </h2>
-        <p data-aos="fade-up" class="text-center mb-12 py-6 xl:w-2/3 text-[18px]">
+        <p data-aos="fade-up" class="text-center mb-12 py-6 xl:w-2/3 text-[18px] sm:px-6">
           {{ $t('our_service.text') }}
         </p>
         <div data-aos="fade-up" class="w-full flex flex-row flex-wrap place-items-center items-stretch g-screen">
@@ -292,9 +292,8 @@ export default {
 <style>
 
 .header__section {
-  padding: 0 15px;
+  padding: 0 20px;
 }
-
 .team {
   -webkit-box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 2px 21px 29px -15px rgba(34, 60, 80, 0.2);
@@ -325,6 +324,22 @@ export default {
 
 #our_services {
   padding: 70px 0 0 0;
+}
+
+
+@media screen and (max-width: 640px) {
+  #our_services .flex > p {
+    padding: 0 25px;
+    text-align: left;   
+  }
+
+  .header__section {
+    padding: 0 25px;
+  }
+
+  .header__section p {
+    text-align: left;
+  }
 }
 
 .base__container .w-full{
