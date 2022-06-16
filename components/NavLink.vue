@@ -26,11 +26,17 @@ export default {
   methods: {
     changeBlock(url) {
       const $targetEle = $(url)
-      $('html, body').stop().animate({
-          'scrollTop': $targetEle.offset().top
-      }, 100, 'swing');
-    }
-  }
+      $('html, body').stop().animate(
+        {
+          scrollTop: $targetEle.offset().top,
+        },
+        700,
+        'swing'
+      )
+
+      if (this.$parent?.openSidebar) this.$parent.openSidebar()
+    },
+  },
 }
 </script>
 <style>

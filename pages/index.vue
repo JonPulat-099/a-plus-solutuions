@@ -132,6 +132,8 @@
           </div>
         </div>
       </div>
+
+      <nuxt-link class="learn__more" to="/services"> Learn more </nuxt-link>
     </section>
 
     <!-- Advanced trading tools section -->
@@ -378,5 +380,27 @@ export default {
 
 #partners {
   padding: 80px 0 0 0;
+}
+
+.learn__more {
+  width: 220px;
+  height: 45px;
+  border: 1px solid #1B778B;
+  color: #1B778B;
+  border-radius: 10px;
+  display: block;
+  text-align: center;
+  line-height: 45px; 
+  margin: 0 auto;
+  transition: .3s;
+  font-weight: 600;
+}
+
+.learn__more:hover {
+  background: #1B778B;
+  color: #FFFFFF;
+  -webkit-box-shadow: inset 0px 0px 21px -15px rgba(255,255,255,1);
+  -moz-box-shadow: inset 0px 0px 21px -15px rgba(255,255,255,1);
+  box-shadow: inset 0px 0px 35px -15px rgba(255,255,255,1);
 }
 </style>
