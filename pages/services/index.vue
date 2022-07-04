@@ -216,13 +216,53 @@
       единая аналитическая база для self-service аналитиков и data scientists.
     </p>
 
-    <h1 class="max-w-[980px] lg:mx-auto mx-5 font-extrabold text-[30px] leading-[34px]">
+    <h1 class="max-w-[980px] lg:mx-auto mt-16 font-extrabold text-[30px] leading-[34px]">
       DATA ПРЕИМУЩЕСТВА ВНЕДРЕНИЯ КХД
     </h1>
 
-    <div class="w-[1100px] h-[350px] rounded-md bg-fuchsia-300 mx-auto my-10"></div>
+    <div class="advantages max-w-[1100px] rounded-md mx-auto my-10 relative z-10">
+      <div class="visaul__dwh">
+        <div class="visaul__dwh--1">
+          <img src="/images/services/big-data.svg" alt="" />
+          <img src="/images/services/big-data.svg" alt="" />
+          <img src="/images/services/big-data.svg" alt="" />
+          <p>Разрозненные источники данных</p>
+        </div>
+        <div class="visaul__dwh--2">
+          <img src="/images/arrow.svg" alt="">
+        </div>
+        <div class="visaul__dwh--3">
+          <img src="/images/services/server.svg" alt="" />
+          <p>КХД</p>
+        </div>
+        <div class="visaul__dwh--4">
+          <img src="/images/arrow.svg" alt="">
+        </div>
+        <div class="visaul__dwh--5">
+          <div>
+            <img src="/images/services/stock-market.svg" alt="" />
+            <p>Бизнес-отчетность</p>
+          </div>
+          <div>
+            <img src="/images/services/monitoring.svg" alt="" />
+            <p>Self-seervice аналитика</p>
+          </div>
+          <div>
+            <img src="/images/services/ai.svg" alt="" />
+            <p>Продвинутая аналитика</p>
+          </div>
+        </div>
+        <div class="visaul__dwh--6">
+          <img src="/images/arrow.svg" alt="">
+        </div>
+        <div class="visaul__dwh--7">
+          <img src="/images/services/solution.svg" alt="" />
+          <p>Верные решения</p>
+        </div>
+      </div>
+    </div>
 
-    <div class="our__approach pt-16 pb-96">
+    <div class="our__approach pt-72 pb-96 relative z-0">
       <div class="our__approach--container max-w-[980px] lg:mx-auto mx-5">
         <h1 class="font-extrabold text-[30px] leading-[34px]">НАШ ПОДХОД</h1>
 
@@ -1020,7 +1060,7 @@ export default {
   },
 
   destroyed() {
-    document.body.style.overflow = 'visible';
+    document.body.style.overflow = 'visible'
   },
 
   methods: {
@@ -1034,11 +1074,15 @@ export default {
 
     goToBlock(url) {
       const $targetEle = $(url)
-      $('html, body').stop().animate({
-          'scrollTop': $targetEle.offset().top
-      }, 100, 'swing');
+      $('html, body').stop().animate(
+        {
+          scrollTop: $targetEle.offset().top,
+        },
+        100,
+        'swing'
+      )
       this.toggleSidebar()
-    }
+    },
   },
 }
 </script>

@@ -1,0 +1,32 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="80" height="80" rx="20" fill="url(#paint0_linear_692_163)"/>
+<path d="M16 46V22C16 18.6863 18.6863 16 22 16H58C61.3137 16 64 18.6863 64 22V50C64 53.3137 61.3137 56 58 56H22C18.6863 56 16 53.3137 16 50V50" stroke="#2199B4" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M16 50H64" stroke="#2199B4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 20H25" stroke="#2199B4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 23H25" stroke="#2199B4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 44V46" stroke="#2199B4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24 41V46" stroke="#2199B4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M28 37V46" stroke="#2199B4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M36 37V46" stroke="#2199B4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M40 37V46" stroke="#2199B4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M56 37V46" stroke="#2199B4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M60 37V46" stroke="#2199B4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M48 34V46" stroke="#2199B4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M52 38V46" stroke="#2199B4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32 39V46" stroke="#2199B4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M44 39V46" stroke="#2199B4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M29 20H33" stroke="#2199B4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M29 23H33" stroke="#2199B4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M44 56V61C44 62 44.6 64 47 64" stroke="#2199B4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M36 59V61C36 62 35.4 64 33 64" stroke="#2199B4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M50 64H30" stroke="#2199B4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="58" cy="20" r="1" fill="#2199B4"/>
+<circle cx="55" cy="20" r="1" fill="#2199B4"/>
+<circle cx="52" cy="20" r="1" fill="#2199B4"/>
+<defs>
+<linearGradient id="paint0_linear_692_163" x1="6.86352e-06" y1="80" x2="49.1944" y2="118.929" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F6F6F6"/>
+<stop offset="1" stop-color="#F4FBFF"/>
+</linearGradient>
+</defs>
+</svg>
