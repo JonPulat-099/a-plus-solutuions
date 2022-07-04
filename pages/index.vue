@@ -55,7 +55,7 @@
     <!-- Partners section -->
     <section class="base__container relative max-w-full sm:px-6 mt-14 mb-24 overflow-hidden bg-[#f8f8f8]">
       <div class="experience w-full px-6 sm:px-0 py-16 flex flex-col items-center justify-center space-y-4 text-center">
-        <h2 data-aos="flip-down" class="text-2xl text-neutral-800 font-semibold text-[#1B778B] text-[30px] mb-12">
+        <h2 data-aos="flip-down" class="text-2xl font-semibold text-[#1B778B] text-[30px] mb-12">
           {{ $t('exprience_project') }}
         </h2>
         <!-- <p data-aos="flip-down" class="paragraph">We're partners with countless major organisations around the globe</p> -->
@@ -90,7 +90,7 @@
         </h2>
         <div
           data-aos="fade-up"
-          class="relative w-full flex items-stretch flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8 mb-12"
+          class="relative w-full flex items-stretch flex-col lg:flex-row justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8 mb-12"
         >
           <LandingWhyUsCard
             v-for="(d, i) in default_sitation"
@@ -105,7 +105,7 @@
         </h2>
         <div
           data-aos="fade-up"
-          class="relative w-full flex items-stretch flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8"
+          class="relative w-full flex items-stretch flex-col lg:flex-row justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8"
         >
           <LandingWhyUsCard v-for="(s, i) in solutions" :key="i" :text="s.text" :img="s.img" :color="s.bg_color" />
         </div>
@@ -281,13 +281,6 @@ export default {
         ],
       },
     }
-  },
-
-  mounted() {
-    window.addEventListener("scroll", function() {
-      const navbar = document.querySelector("#navbar")
-      navbar.classList.toggle("sticky", window.scrollY > 0)
-    })
   },
 }
 </script>

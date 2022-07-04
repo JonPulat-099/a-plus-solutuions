@@ -1,0 +1,68 @@
+.logo {
+    width: 130px;
+    height: 34px;
+}
+
+.services__nav {
+    box-shadow: 0px 4px 10px 1px #E3EBF0 !important;
+    position: relative;
+    overflow: hidden;
+    z-index: 1000;
+    background: #FFFFFF !important;
+    position: sticky;
+}
+
+.our__approach {
+
+    background: linear-gradient(128.36deg, #F6F6F6 44.18%, #F4FBFF 100%);
+}
+
+#sidebar {
+    max-width: 350px;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background: #f8f8f8;
+    position: fixed;
+    overflow-y: scroll;
+    margin: 0 0 0 -350px;
+    transition: 0.3s;
+    box-shadow: inset 2px 21px 29px -15px rgba(34, 60, 80, 0.2);
+    z-index: 5;
+
+    padding: 20px 20px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#sidebar a {
+    display: block;
+    text-transform: uppercase;
+    margin: 10px 0;
+    transition: .25s;
+}
+
+#sidebar a:hover {
+    color:rgba(34, 60, 80, 0.4)
+}
+
+.backToHome {
+    display: block;
+    padding: 5px 15px;
+    border: 1px solid #1b778b;
+    margin-top: auto;
+    border-radius: 10px;
+}
+
+.backToHome:hover {
+    background: #1b778b;
+    color: #ffffff;
+}
+
+#overlay {
+    z-index: 4;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0, .5);
+}
